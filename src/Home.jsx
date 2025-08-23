@@ -21,22 +21,36 @@ export default function PhysicsProblemSolvingPage() {
                 >
                     Mehbubul Hasan Al-Quvi
                 </a>{" "}
-                (BUET CSE '18) on high-quality problem solving, slides, worksheet, study plan, and guideline.
+                (BUET CSE '18, BUET Admission Rank: 8)<br/>on high-quality problem solving, slides, worksheet, study plan, and guideline.
+                <br/>
+                12 weeks comprehensive course, 100% online, self-paced learning.<br/>
             </p>
 
-            <a
-                className="enroll-btn"
-                href="https://forms.gle/GP5LvA5tD1NaCoGJ6"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Enroll Now
-            </a>
+            <div className="btn-group">
+                <a
+                    className="enroll-btn"
+                    href="https://forms.gle/GP5LvA5tD1NaCoGJ6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Enroll Now
+                </a>
+
+                <a
+                    className="enroll-btn"
+                    href="https://www.facebook.com/share/g/18pf1jCLVf/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Private FB Group
+                </a>
+            </div>
 
             <p className="course-fee">
                 Course Fee: <b><s>6000 Taka</s> 4000 Taka</b> (valid till 31 Aug, 2025)
                 <br />
-                bKash: <b>01940422143</b> (Send Money)
+                bKash: <b>01940422143</b> (Send Money)<br/>
+                <i>After payment, please click the "Enroll Now" button and fill up the enrollment form. Then, join the private FB group to get started.</i>
             </p>
 
             <div className="table-wrap">
@@ -67,7 +81,6 @@ export default function PhysicsProblemSolvingPage() {
                 </div>
             </div>
 
-            {/* Exact styles, adapted for a React wrapper instead of <body> */}
             <style>{`
         :root{
           --pad: clamp(10px, 2.5vw, 20px);
@@ -106,6 +119,13 @@ export default function PhysicsProblemSolvingPage() {
           color: var(--muted);
           margin-bottom: 15px;
           max-width: 700px;
+        }
+
+        .btn-group {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: center;
         }
 
         .enroll-btn {
