@@ -1,65 +1,74 @@
 import React, { useEffect } from "react";
 
 export default function PhysicsProblemSolvingPage() {
-  useEffect(() => {
-    document.title = "Physics Problem Solving (Engineering Admission HSC 2025)";
-  }, []);
+    useEffect(() => {
+        document.title = "Physics Problem Solving (Engineering Admission HSC 2025)";
+    }, []);
 
-  return (
-    <div className="page">
-      <h1>
-        Physics Problem Solving <br />(Engineering Admission HSC 2025)
-      </h1>
+    return (
+        <div className="page">
+            <h1>
+                Physics Problem Solving <br />(Engineering Admission HSC 2025)
+            </h1>
 
-      <p className="subtext">
-        Pre-recorded lectures on high-quality problem solving, slides, worksheet, study plan, and guideline.
-      </p>
+            <p className="subtext">
+                Pre-recorded lectures by{" "}
+                <a
+                    href="https://quvi007.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#06b6d4", textDecoration: "underline" }}
+                >
+                    Mehbubul Hasan Al-Quvi
+                </a>{" "}
+                (BUET CSE '18) on high-quality problem solving, slides, worksheet, study plan, and guideline.
+            </p>
 
-      <a
-        className="enroll-btn"
-        href="https://forms.gle/GP5LvA5tD1NaCoGJ6"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Enroll Now
-      </a>
+            <a
+                className="enroll-btn"
+                href="https://forms.gle/GP5LvA5tD1NaCoGJ6"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Enroll Now
+            </a>
 
-      <p className="course-fee">
-        Course Fee: <b><s>6000 Taka</s> 4000 Taka</b> (valid till 31 Aug, 2025)
-        <br />
-        bKash: <b>01940422143</b> (Send Money)
-      </p>
+            <p className="course-fee">
+                Course Fee: <b><s>6000 Taka</s> 4000 Taka</b> (valid till 31 Aug, 2025)
+                <br />
+                bKash: <b>01940422143</b> (Send Money)
+            </p>
 
-      <div className="table-wrap">
-        <div className="table-scroller">
-          <table role="table" aria-label="Course schedule">
-            <thead>
-              <tr>
-                <th>Week</th>
-                <th>Topic</th>
-                <th>Release Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td>Vector (ভেক্টর)</td><td>01 Sep, 2025</td></tr>
-              <tr><td>2</td><td>Newtonian Mechanics (নিউটনীয় বলবিদ্যা)</td><td>08 Sep, 2025</td></tr>
-              <tr><td>3</td><td>Work, Energy and Power (কাজ, শক্তি ও ক্ষমতা)</td><td>15 Sep, 2025</td></tr>
-              <tr><td>4</td><td>Gravitation and Gravity (মহাকর্ষ ও অভিকর্ষ)</td><td>22 Sep, 2025</td></tr>
-              <tr><td>5</td><td>Structural Properties of Matter (পদার্থের গাঠনিক ধর্ম)</td><td>29 Sep, 2025</td></tr>
-              <tr><td>6</td><td>Periodic Motion (পর্যায়বৃত্ত গতি)</td><td>06 Oct, 2025</td></tr>
-              <tr><td>7</td><td>Ideal Gas, Thermodynamics (আদর্শ গ্যাস, তাপগতিবিদ্যা)</td><td>13 Oct, 2025</td></tr>
-              <tr><td>8</td><td>Electrostatics (স্থির তড়িৎ)</td><td>20 Oct, 2025</td></tr>
-              <tr><td>9</td><td>Current Electricity (চল তড়িৎ)</td><td>27 Oct, 2025</td></tr>
-              <tr><td>10</td><td>Physical Optics (ভৌত আলোকবিজ্ঞান)</td><td>03 Nov, 2025</td></tr>
-              <tr><td>11</td><td>Modern Physics (আধুনিক পদার্থবিজ্ঞান)</td><td>10 Nov, 2025</td></tr>
-              <tr><td>12</td><td>Nuclear Physics, Semiconductor & Electronics (নিউক্লিয়ার পদার্থবিজ্ঞান, সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স)</td><td>17 Nov, 2025</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+            <div className="table-wrap">
+                <div className="table-scroller">
+                    <table role="table" aria-label="Course schedule">
+                        <thead>
+                            <tr>
+                                <th>Week</th>
+                                <th>Topic</th>
+                                <th>Release Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Vector (ভেক্টর)</td><td>01 Sep, 2025</td></tr>
+                            <tr><td>2</td><td>Newtonian Mechanics (নিউটনীয় বলবিদ্যা)</td><td>08 Sep, 2025</td></tr>
+                            <tr><td>3</td><td>Work, Energy and Power (কাজ, শক্তি ও ক্ষমতা)</td><td>15 Sep, 2025</td></tr>
+                            <tr><td>4</td><td>Gravitation and Gravity (মহাকর্ষ ও অভিকর্ষ)</td><td>22 Sep, 2025</td></tr>
+                            <tr><td>5</td><td>Structural Properties of Matter (পদার্থের গাঠনিক ধর্ম)</td><td>29 Sep, 2025</td></tr>
+                            <tr><td>6</td><td>Periodic Motion (পর্যায়বৃত্ত গতি)</td><td>06 Oct, 2025</td></tr>
+                            <tr><td>7</td><td>Ideal Gas, Thermodynamics (আদর্শ গ্যাস, তাপগতিবিদ্যা)</td><td>13 Oct, 2025</td></tr>
+                            <tr><td>8</td><td>Electrostatics (স্থির তড়িৎ)</td><td>20 Oct, 2025</td></tr>
+                            <tr><td>9</td><td>Current Electricity (চল তড়িৎ)</td><td>27 Oct, 2025</td></tr>
+                            <tr><td>10</td><td>Physical Optics (ভৌত আলোকবিজ্ঞান)</td><td>03 Nov, 2025</td></tr>
+                            <tr><td>11</td><td>Modern Physics (আধুনিক পদার্থবিজ্ঞান)</td><td>10 Nov, 2025</td></tr>
+                            <tr><td>12</td><td>Nuclear Physics, Semiconductor & Electronics (নিউক্লিয়ার পদার্থবিজ্ঞান, সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স)</td><td>17 Nov, 2025</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-      {/* Exact styles, adapted for a React wrapper instead of <body> */}
-      <style>{`
+            {/* Exact styles, adapted for a React wrapper instead of <body> */}
+            <style>{`
         :root{
           --pad: clamp(10px, 2.5vw, 20px);
           --radius: 12px;
@@ -185,6 +194,6 @@ export default function PhysicsProblemSolvingPage() {
           tbody tr { transition: none; }
         }
       `}</style>
-    </div>
-  );
+        </div>
+    );
 }
