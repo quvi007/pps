@@ -1,0 +1,104 @@
+/* ===========================
+   Page & Layout
+   =========================== */
+.subject-bg {
+  background-color: #f7f7fb; /* light, cozy */
+}
+
+.subjects-wrap {
+  min-height: 60vh;          /* center the grid under the header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* A simple, predictable flex grid for two equal cards */
+.subjects-grid {
+  --grid-gap: 1.5rem;
+  --grid-max: 960px;         /* caps total row width so cards don’t get too wide */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--grid-gap);
+  width: 100%;
+  max-width: var(--grid-max);
+  margin: 0 auto;
+}
+
+/* Each card uses the same responsive width.
+   Adjust 24vw / 400px to taste if you want a tad wider/narrower. */
+.subject-item {
+  --card-width: clamp(280px, 24vw, 400px);
+  flex: 0 1 var(--card-width);
+  display: block;
+}
+
+/* ===========================
+   Card Styling
+   =========================== */
+:root {
+  --card-bg: #fbfcff;               /* keep this exact color */
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-shadow: 0 .3rem .8rem rgba(16, 24, 40, 0.06);
+  --card-shadow-hover: 0 .8rem 1.6rem rgba(16, 24, 40, 0.12);
+}
+
+.subject-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);   /* subtle initial shadow */
+  min-height: 200px;
+  border-radius: 1rem;              /* matches your rounded look */
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    border-color 120ms ease;
+  cursor: pointer;
+}
+
+.subject-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: rgba(0, 0, 0, 0.10);
+}
+
+/* Accessible focus ring when the card is a link */
+.subject-item:focus-visible .subject-card,
+.subject-card:focus-within {
+  outline: 2px solid #5b9df9;
+  outline-offset: 2px;
+}
+
+/* ===========================
+   Avatar Tile
+   =========================== */
+.subject-avatar {
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #eef2f7;
+  color: #334155;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* ===========================
+   Loading Placeholder
+   =========================== */
+.placeholder {
+  background-color: #e9ecef !important;
+  border-radius: 0.5rem;
+}
+
+/* ===========================
+   Small Tweaks
+   =========================== */
+@media (min-width: 1400px) {
+  /* tighten a bit more on ultra-wide monitors */
+  .subjects-grid { --grid-max: 900px; }
+  .subject-item { --card-width: clamp(280px, 22vw, 380px); }
+}

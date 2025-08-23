@@ -1,0 +1,190 @@
+import React, { useEffect } from "react";
+
+export default function PhysicsProblemSolvingPage() {
+  useEffect(() => {
+    document.title = "Physics Problem Solving (Engineering Admission HSC 2025)";
+  }, []);
+
+  return (
+    <div className="page">
+      <h1>
+        Physics Problem Solving <br />(Engineering Admission HSC 2025)
+      </h1>
+
+      <p className="subtext">
+        Pre-recorded lectures on high-quality problem solving, slides, worksheet, study plan, and guideline.
+      </p>
+
+      <a
+        className="enroll-btn"
+        href="https://forms.gle/GP5LvA5tD1NaCoGJ6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Enroll Now
+      </a>
+
+      <p className="course-fee">
+        Course Fee: <b><s>6000 Taka</s> 4000 Taka</b> (valid till 31 Aug, 2025)
+        <br />
+        bKash: <b>01940422143</b> (Send Money)
+      </p>
+
+      <div className="table-wrap">
+        <div className="table-scroller">
+          <table role="table" aria-label="Course schedule">
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Release Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Vector (ভেক্টর)</td><td>01 Sep, 2025</td></tr>
+              <tr><td>2</td><td>Newtonian Mechanics (নিউটনীয় বলবিদ্যা)</td><td>08 Sep, 2025</td></tr>
+              <tr><td>3</td><td>Work, Energy and Power (কাজ, শক্তি ও ক্ষমতা)</td><td>15 Sep, 2025</td></tr>
+              <tr><td>4</td><td>Gravitation and Gravity (মহাকর্ষ ও অভিকর্ষ)</td><td>22 Sep, 2025</td></tr>
+              <tr><td>5</td><td>Structural Properties of Matter (পদার্থের গাঠনিক ধর্ম)</td><td>29 Sep, 2025</td></tr>
+              <tr><td>6</td><td>Periodic Motion (পর্যায়বৃত্ত গতি)</td><td>06 Oct, 2025</td></tr>
+              <tr><td>7</td><td>Ideal Gas, Thermodynamics (আদর্শ গ্যাস, তাপগতিবিদ্যা)</td><td>13 Oct, 2025</td></tr>
+              <tr><td>8</td><td>Electrostatics (স্থির তড়িৎ)</td><td>20 Oct, 2025</td></tr>
+              <tr><td>9</td><td>Current Electricity (চল তড়িৎ)</td><td>27 Oct, 2025</td></tr>
+              <tr><td>10</td><td>Physical Optics (ভৌত আলোকবিজ্ঞান)</td><td>03 Nov, 2025</td></tr>
+              <tr><td>11</td><td>Modern Physics (আধুনিক পদার্থবিজ্ঞান)</td><td>10 Nov, 2025</td></tr>
+              <tr><td>12</td><td>Nuclear Physics, Semiconductor & Electronics (নিউক্লিয়ার পদার্থবিজ্ঞান, সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স)</td><td>17 Nov, 2025</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Exact styles, adapted for a React wrapper instead of <body> */}
+      <style>{`
+        :root{
+          --pad: clamp(10px, 2.5vw, 20px);
+          --radius: 12px;
+          --glow: rgba(0, 255, 200, 0.2);
+          --border: rgba(0, 255, 200, 0.3);
+          --muted: #aaa;
+          --fg: #fff;
+          --bg: #000;
+          --panel: #111;
+        }
+
+        .page {
+          background-color: var(--bg);
+          color: var(--fg);
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 100vh;
+          text-align: center;
+          padding: clamp(12px, 3vw, 32px);
+          gap: 10px;
+        }
+
+        h1 {
+          font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+          line-height: 1.25;
+          color: #06b6d4;
+          margin: 0 0 8px 0;
+          text-shadow: 0 0 12px rgba(0, 255, 200, 0.5);
+        }
+
+        .subtext {
+          font-size: clamp(0.9rem, 2.5vw, 1rem);
+          color: var(--muted);
+          margin-bottom: 15px;
+          max-width: 700px;
+        }
+
+        .enroll-btn {
+          display: inline-block;
+          padding: clamp(12px, 2.6vw, 14px) clamp(22px, 5.2vw, 28px);
+          font-size: clamp(1rem, 2.8vw, 1.1rem);
+          color: #fff;
+          background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+          border: none;
+          border-radius: 999px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.2s ease;
+          margin-bottom: 6px;
+          will-change: transform;
+        }
+        .enroll-btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px var(--glow); }
+        .enroll-btn:active { transform: translateY(0); opacity: 0.95; }
+
+        .course-fee {
+          font-size: clamp(0.85rem, 2.6vw, 0.95rem);
+          color: var(--muted);
+          margin: 0 0 18px 0;
+        }
+        .course-fee b { color: var(--fg); }
+
+        .table-wrap{
+          width: min(100%, 1000px);
+          background: transparent;
+          border-radius: var(--radius);
+          box-shadow: 0 0 25px var(--glow);
+          border: 2px solid var(--border);
+          overflow: hidden;
+        }
+
+        .table-scroller{
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          background: var(--panel);
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          min-width: 520px;
+          background-color: var(--panel);
+        }
+
+        thead {
+          position: sticky;
+          top: 0;
+          z-index: 1;
+          background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+        }
+
+        thead th {
+          padding: 14px;
+          color: #fff;
+          font-size: clamp(0.9rem, 2.7vw, 1.05rem);
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-align: center;
+          white-space: nowrap;
+        }
+
+        tbody tr {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          transition: background 0.3s ease;
+        }
+        tbody tr:hover { background: rgba(255, 255, 255, 0.05); }
+
+        tbody td {
+          padding: 14px;
+          color: #e5e5e5;
+          font-size: clamp(0.95rem, 2.8vw, 1rem);
+          text-align: center;
+        }
+
+        @media (max-width: 480px){
+          thead th, tbody td { padding: 12px; }
+          .table-wrap { border-width: 1.5px; }
+        }
+
+        @media (prefers-reduced-motion: reduce){
+          .enroll-btn { transition: none; }
+          tbody tr { transition: none; }
+        }
+      `}</style>
+    </div>
+  );
+}
