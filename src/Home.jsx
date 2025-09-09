@@ -47,7 +47,7 @@ export default function PhysicsProblemSolvingPage() {
             </div>
 
             <p className="course-fee">
-                Course Fee: <b><s>6000 Taka</s> 4000 Taka</b> (valid till 31 Aug, 2025)
+                Course Fee: <b>6000 Taka</b>
                 <br />
                 bKash: <b>01940422143</b> (Send Money)<br/>
                 <i>After payment, please click the "Enroll Now" button and fill up the enrollment form. Then, join the private FB group to get started.</i>
@@ -60,23 +60,31 @@ export default function PhysicsProblemSolvingPage() {
                             <tr>
                                 <th>Week</th>
                                 <th>Topic</th>
-                                <th>Release Date</th>
+                                <th>Date</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>1</td><td>Vector (ভেক্টর)</td><td>01 Sep, 2025</td></tr>
-                            <tr><td>2</td><td>Newtonian Mechanics (নিউটনীয় বলবিদ্যা)</td><td>08 Sep, 2025</td></tr>
-                            <tr><td>3</td><td>Work, Energy and Power (কাজ, শক্তি ও ক্ষমতা)</td><td>15 Sep, 2025</td></tr>
-                            <tr><td>4</td><td>Gravitation and Gravity (মহাকর্ষ ও অভিকর্ষ)</td><td>22 Sep, 2025</td></tr>
-                            <tr><td>5</td><td>Structural Properties of Matter (পদার্থের গাঠনিক ধর্ম)</td><td>29 Sep, 2025</td></tr>
-                            <tr><td>6</td><td>Periodic Motion (পর্যায়বৃত্ত গতি)</td><td>06 Oct, 2025</td></tr>
-                            <tr><td>7</td><td>Ideal Gas, Thermodynamics (আদর্শ গ্যাস, তাপগতিবিদ্যা)</td><td>13 Oct, 2025</td></tr>
-                            <tr><td>8</td><td>Electrostatics (স্থির তড়িৎ)</td><td>20 Oct, 2025</td></tr>
-                            <tr><td>9</td><td>Current Electricity (চল তড়িৎ)</td><td>27 Oct, 2025</td></tr>
-                            <tr><td>10</td><td>Physical Optics (ভৌত আলোকবিজ্ঞান)</td><td>03 Nov, 2025</td></tr>
-                            <tr><td>11</td><td>Modern Physics (আধুনিক পদার্থবিজ্ঞান)</td><td>10 Nov, 2025</td></tr>
-                            <tr><td>12</td><td>Nuclear Physics, Semiconductor & Electronics (নিউক্লিয়ার পদার্থবিজ্ঞান, সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স)</td><td>17 Nov, 2025</td></tr>
-                        </tbody>
+          <tr><td>1</td><td>Vector (ভেক্টর)
+<div class="video-buttons">
+      <a href="https://youtu.be/nBcImos_LVI" target="_blank">Lecture 1/5</a>
+      <a href="https://youtu.be/CuTKgat-9Jk" target="_blank">Lecture 2/5</a>
+      <a href="https://youtu.be/nfSviLoSCUE" target="_blank">Lecture 3/5</a>
+      <a href="" target="_blank">Lecture 4/5</a>
+      <a href="https://youtu.be/OeNhP4wUUYs" target="_blank">Lecture 5/5</a>
+    </div>
+</td><td>07 Sep, 2025</td></tr>
+          <tr><td>2</td><td>Newtonian Mechanics (নিউটনীয় বলবিদ্যা)</td><td>17 Sep, 2025</td></tr>
+          <tr><td>3</td><td>Work, Energy and Power (কাজ, শক্তি ও ক্ষমতা)</td><td>21 Sep, 2025</td></tr>
+          <tr><td>4</td><td>Gravitation and Gravity (মহাকর্ষ ও অভিকর্ষ)</td><td>28 Sep, 2025</td></tr>
+          <tr><td>5</td><td>Structural Properties of Matter (পদার্থের গাঠনিক ধর্ম)</td><td>5 Oct, 2025</td></tr>
+          <tr><td>6</td><td>Periodic Motion (পর্যায়বৃত্ত গতি)</td><td>12 Oct, 2025</td></tr>
+          <tr><td>7</td><td>Ideal Gas, Thermodynamics (আদর্শ গ্যাস, তাপগতিবিদ্যা)</td><td>19 Oct, 2025</td></tr>
+          <tr><td>8</td><td>Electrostatics (স্থির তড়িৎ)</td><td>26 Oct, 2025</td></tr>
+          <tr><td>9</td><td>Current Electricity (চল তড়িৎ)</td><td>02 Nov, 2025</td></tr>
+          <tr><td>10</td><td>Physical Optics (ভৌত আলোকবিজ্ঞান)</td><td>09 Nov, 2025</td></tr>
+          <tr><td>11</td><td>Modern Physics (আধুনিক পদার্থবিজ্ঞান)</td><td>16 Nov, 2025</td></tr>
+          <tr><td>12</td><td>Nuclear Physics, Semiconductor & Electronics (নিউক্লিয়ার পদার্থবিজ্ঞান, সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স)</td><td>23 Nov, 2025</td></tr>
+        </tbody>
                     </table>
                 </div>
             </div>
@@ -213,7 +221,31 @@ export default function PhysicsProblemSolvingPage() {
           .enroll-btn { transition: none; }
           tbody tr { transition: none; }
         }
+        .video-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+margin-top: 10px;
+}
+
+.video-buttons a {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 100, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+.video-buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 100, 0, 0.6);
+}
       `}</style>
         </div>
     );
 }
+
